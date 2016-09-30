@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>现代浏览器博物馆</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	body{
+    		padding-top: 50px;
+    		padding-bottom: 50px;
+    	}
+    	.carousel{
+    		height: 500px;
+    		background-color: #000;
+    		margin-bottom: 60px;
+    	}
+    	.carousel .item{
+    		height: 500px;
+    		background-color: #000;
+    	}
+    	.carousel img{
+    		width: 100%;
+    	}
+    	.carousel-caption p{
+    		margin-bottom: 20px;
+    		font-size: 20px;
+    		line-height: 1.8;
+    	}
+    	#summary-container .col-md-4{
+    		text-align: center;
+    	}
+    	hr.divider{
+    		margin:40px 0;
+    	}
+        .feature{
+        	padding: 30px 0;
+        }
+        .feature-heading{
+        	font-size: 50px;
+        	color: #2a6496;
+        	margin-top: 120px;
+        }
+        .feature-heading .text-muted{
+        	font-size: 28px;
+        	color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航开始 -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    	<div class="container"><!-- 居中显示,自适应布局-fluid -->
+    		<div class="navbarheader">
+    		    <!-- 页面宽度小时显示按钮 -->
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+    				<span class="sr-only">Toggle navigation</span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    			</button>
+    			<a href="#" class="navbar-brand">现代浏览器博物馆</a>
+    		</div>
+
+    		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+    			<ul class="nav navbar-nav">
+    				<li class="active"><a href="#">综述</a></li>
+    				<li><a href="#">简述</a></li>
+    				<li class="dropdown">
+    				    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<span class="caret"></span></a>
+    				    <ul class="dropdown-menu" role="menu">
+    				    	<li><a href="#home">第一个tab</a></li>
+    				    	<li><a href="#profile">第二个tab</a></li>
+    				    	<li><a href="#messages">第三个tab</a></li>
+    				    	<li class="divider"></li>
+    				    	<li><a href="#settings">第四个tab</a></li>
+    				    </ul>
+    				</li>
+    				<li><a href="#" data-toggle="modal" data-target="#about">弹出框</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    </nav>
+
+    <!-- 广告轮播 -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- 下方导航点 -->
+		<ol class="carousel-indicators">
+			<li data-target="carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="carousel-example-generic" data-slide-to="4"></li>
+		</ol>
+		<!-- 轮播内容 -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/firefox-big.jpg" alt="3">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/firefox-big.jpg" alt="3">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/firefox-big.jpg" alt="3">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/firefox-big.jpg" alt="3">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/firefox-big.jpg" alt="3">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="" alt="">
+				<div class="carousel-caption">
+					<h1>Firefox</h1>
+					<p>adadasdasdasdasd阿发大阿萨德阿萨德暗杀啊</p>
+				</div>
+			</div>
+		</div>
+		<!-- 左右按钮 -->
+		<a href="#carousel-example-generic" class="left carousel-control" roll="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#carousel-example-generic" class="right carousel-control" roll="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+    <!-- 三栏布局 -->
+    <div class="container" id="summary-container">
+    	<div class="row">
+    		<div class="col-md-4">
+	    		<img src="images/chrome-logo-small.jpg" alt="chorm" class="img-circle">
+	    		<h2>Chorm</h2>
+	    		<p>Google Chorme.e Chorme.e Chorme.e Chorme.e Chorme.e Chorme.</p>
+    		</div>
+    		<div class="col-md-4">
+	    		<img src="images/chrome-logo-small.jpg" alt="chorm" class="img-circle">
+	    		<h2>Chorm</h2>
+	    		<p>Google Chorme.e Chorme.e Chorme.e Chorme.e Chorme.e Chorme.</p>
+    		</div>
+    		<div class="col-md-4">
+	    		<img src="images/chrome-logo-small.jpg" alt="chorm" class="img-circle">
+	    		<h2>Chorm</h2>
+	    		<p>Google Chorme.e Chorme.e Chorme.e Chorme.e Chorme.e Chorme.</p>
+	    		</div>
+    	</div>
+    <hr class="divider">
+    </div>
+
+    <!-- 标签 -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
+    	<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    	<li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+    	<li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+    	<li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+    <div class="tab-content">
+    	<div class="tab-pane active" id="home">
+	    	<div class="row feature">
+	    		<div class="col-md-7">
+	    			<h2 class="feature-heading">Safari<span class="text-muted">Mac用户首选</span></h2>
+	    			<p class="lead">saaf沙发阿萨德阿发阿发阿发阿发 阿发分数发顺丰阿发阿发阿发阿发阿发啊发发暗杀是否是是</p>
+	    		</div>
+	    		<div class="col-md-5">
+	    			<img src="images/safari-logo.jpg" alt="Safari" class="feature-image img-responsive">
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="tab-pane" id="profile">
+	    	<div class="row feature">
+	    		<div class="col-md-5">
+	    			<img src="images/safari-logo.jpg" alt="Safari" class="feature-image img-responsive">
+	    		</div>
+	    		<div class="col-md-7">
+	    			<h2 class="feature-heading">Safari<span class="text-muted">Mac用户首选</span></h2>
+	    			<p class="lead">saaf沙发阿萨德阿发阿发阿发阿发 阿发分数发顺丰阿发阿发阿发阿发阿发啊发发暗杀是否是是</p>
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="tab-pane" id="messages">
+    		<div class="row feature">
+	    		<div class="col-md-7">
+	    			<h2 class="feature-heading">Safari<span class="text-muted">Mac用户首选</span></h2>
+	    			<p class="lead">saaf沙发阿萨德阿发阿发阿发阿发 阿发分数发顺丰阿发阿发阿发阿发阿发啊发发暗杀是否是是</p>
+	    		</div>
+	    		<div class="col-md-5">
+	    			<img src="images/safari-logo.jpg" alt="Safari" class="feature-image img-responsive">
+	    		</div>
+	    	</div>
+	    </div>
+    	<div class="tab-pane" id="settings">
+	    	<div class="row feature">
+	    		<div class="col-md-5">
+	    			<img src="images/safari-logo.jpg" alt="Safari" class="feature-image img-responsive">
+	    		</div>
+	    		<div class="col-md-7">
+	    			<h2 class="feature-heading">Safari<span class="text-muted">Mac用户首选</span></h2>
+	    			<p class="lead">saaf沙发阿萨德阿发阿发阿发阿发 阿发分数发顺丰阿发阿发阿发阿发阿发啊发发暗杀是否是是</p>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+
+    <!-- 版权 -->
+    <hr class="divider">
+
+    <footer>
+    	<p class="pull-right"><a href="#top">回到顶部</a></p>
+    	<p>c zts131420 版权所有</p>
+    </footer>
+
+    <!-- 弹出框 -->
+	<div class="modal fade" id="about">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">弹出框</h4>
+				</div>
+				<div class="modal-body">
+					<p>按时打算的撒按时打算的撒按时打算的撒按时打算的撒按时打算的撒按时打算的撒</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+    	$("#navbar-collapse-1 .dropdown-menu a").click(function(){
+    		var href = $(this).attr("href");
+    		$("#tab-list a[href='" + href + "']").tab("show");
+    	})
+    })
+</script>
+</body>
+</html>
+
+
